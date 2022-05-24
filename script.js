@@ -7,28 +7,41 @@ function generatePassword() {
   var numbers = "0123456789";
   var special = "#$%&()*+,-./:;<=>?";
   var uppercase = lowercase.toUpperCase();
-
-  var input = parseInt(prompt("Choose a lenght between 8 and 128"));
-
-  if (input >= 8 && input <= 128) {
-    // GOOD CODE GOES HERE
-  } else {
-    alert("NOT COOL");
-  }
-
-  var lowercase = window.confirm("Want to use lowercase letters?");
-  if (lowercase == true) {
-    passwordCharSet += lowercase;
-  };
-
-  var uppercase = window.confirm("Want to use uppercase letters?");
-  if (uppercase == true) {
-    passwordCharSet += uppercase;
-  }
-    
-  
-  return "";
 }
+var input = parseInt(prompt("Choose a length between 8 and 128"));
+var passwordCharSet = "";
+
+if (input >= 8 && input <= 128) {
+  // GOOD CODE GOES HERE
+} else {
+  alert("NOT COOL");
+}
+
+var lowercase = window.confirm("Want to use lowercase letters?");
+if (lowercase == true) {
+  passwordCharSet += lowercase;
+};
+
+var uppercase = window.confirm("Want to use uppercase letters?");
+if (uppercase == true) {
+  passwordCharSet += uppercase;
+};
+
+var symbols = window.confirm("Want to use symbols?");
+if (symbols == true) {
+  passwordCharSet += symbols;
+};
+var numbers = window.confirm("Want to use numbers?");
+if (numbers == true) {
+  passwordCharSet += numbers;
+};
+var password = "";
+for (var i = 0; i < length; i++) {
+  password += passwordCharSet[Math.floor(Math.random() * passwordCharSet.length)]
+}
+//return password;
+
+
 
 // Write password to the #password input
 function writePassword() {
