@@ -16,6 +16,17 @@ function generatePassword() {
     alert("NOT COOL");
   }
 
+  var lowercase = window.confirm("Want to use lowercase letters?");
+  if (lowercase == true) {
+    passwordCharSet += lowercase;
+  };
+
+  var uppercase = window.confirm("Want to use uppercase letters?");
+  if (uppercase == true) {
+    passwordCharSet += uppercase;
+  }
+    
+  
   return "";
 }
 
