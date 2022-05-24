@@ -16,9 +16,10 @@ In this project we start out by cloning the starter code, and creating a passwor
 
 
 ## Usage
-I was able to add semantic values to the tags within the HTML file, but I also wanted to make sure that the site still functioned properly.  
-Provided notes within each element to explain the changes made throughout the assignment. 
+Providing protection for sensitive data.
+The end goal is  to randomly generate a password that meets certain criteria
+so that I can create a strong password that provides greater security. 
 
 ## Visuals
-![Mini Project imgage](./assets/images/passwordgenerator.png)
+![Mini Project imgage](./images/passwordgenerator.png)
 
