@@ -17,21 +17,20 @@ if (input >= 8 && input <= 128) {
   alert("NOT COOL");
 }
 
-var lowercase = window.confirm("Want to use lowercase letters?");
+var lowercase = window.alert("Want to use lowercase letters?");
 if (lowercase == true) {
   passwordCharSet += lowercase;
 };
 
-var uppercase = window.confirm("Want to use uppercase letters?");
+var uppercase = window.alert("Want to use uppercase letters?");
 if (uppercase == true) {
   passwordCharSet += uppercase;
 };
-
-var symbols = window.confirm("Want to use symbols?");
+var symbols = window.alert("Want to use symbols?");
 if (symbols == true) {
   passwordCharSet += symbols;
 };
-var numbers = window.confirm("Want to use numbers?");
+var numbers = window.alert("Want to use numbers?");
 if (numbers == true) {
   passwordCharSet += numbers;
 };
@@ -40,6 +39,9 @@ for (var i = 0; i < length; i++) {
   password += passwordCharSet[Math.floor(Math.random() * passwordCharSet.length)]
 }
 //return password;
+function myFunction() {
+  return "Access Allowed";
+}
 
 
 
