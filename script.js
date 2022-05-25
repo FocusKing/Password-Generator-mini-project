@@ -1,12 +1,13 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 var storage = [];
-console.log(storage)
+//console.log(storage)
 function generatePassword() {
   var lowercase = "abcdefghijklmnopqrstuvwxyz";
   var numbers = "0123456789";
   var special = "#$%&()*+,-./:;<=>?";
   var uppercase = lowercase.toUpperCase();
+
 
 
   var input = parseInt(prompt("Choose a length between 8 and 128"));
@@ -31,7 +32,7 @@ function generatePassword() {
     if (hasNumbers == true) {
       passwordCharSet += numbers;
     };
-    console.log(passwordCharSet)
+    //console.log(passwordCharSet)
     var result = "";
     for (var i = 0; i < input; i++) {
       result += passwordCharSet[Math.floor(Math.random() * passwordCharSet.length)]
