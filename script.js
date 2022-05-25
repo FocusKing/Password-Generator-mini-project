@@ -1,3 +1,4 @@
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 var storage = [];
@@ -7,6 +8,8 @@ function generatePassword() {
   var numbers = "0123456789";
   var special = "#$%&()*+,-./:;<=>?";
   var uppercase = lowercase.toUpperCase();
+  var length = "length"; //added var length
+  var myInput ="password"; // add my Input
 
 
 
@@ -45,8 +48,6 @@ function generatePassword() {
   }
 }
   
-
- 
 
 
 
