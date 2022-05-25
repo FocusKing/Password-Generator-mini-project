@@ -15,37 +15,8 @@ function generatePassword() {
 
   var input = parseInt(prompt("Choose a length between 8 and 128"));
   var passwordCharSet = "";
- // function validator (validate) {
- // var str = document.getElementById('generate').value;
-  //if(str.length < 8)
-  //{
- //   document.getElementById("class").innerHTML="Password Length Must Be at least 8 Characters";
- //   document.getElementById("class").style.color="red";
- //   return("too short");
- // } else if (str.search(/[0-9]/)== -1) {
- //   document.getElementById("class").innerHTML="At least 1 numeric value must be entered";
- //   document.getElementById("class").style.color="red";
- //   return("no number added");
- // }
- // else if (str.search(/[a-z]/)== -1) {
- //   document.getElementById("class").innerHTML="At least 1 lowercase letter must be entered";
-  //  document.getElementById("class").style.color="red";
-  //  return("no lowercase letter selected");
- // }
- // else if (str.search(/[A-Z]/)== -1) {
-//    document.getElementById("class").innerHTML="At least 1 uppercase letter must be entered";
-  //  document.getElementById("class").style.color="red";
-  //  return("no uppercase letter selected");
- // }
-  //else if (str.search(/[#$%&()*+,-./:;<=>?]/)== -1) {
-  //  document.getElementById("class").innerHTML="At least 1 uppercase letter must be entered";
-   // document.getElementById("class").style.color="red";
-   // return("no special character selected");
 
-    //document.getElementById("class").innerHTML="Successful";
-    //document.getElementById("class").style.color="Green";
-   // return("PASSWORD STRONG");
-  //}
+
   if (!isNaN(input) && input >= 8 && input <= 128) {
 
     var hasLowercase = window.confirm("Want to use lowercase letters?");
@@ -84,5 +55,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+
 }
-generateBtn.addEventListener
+generateBtn.addEventListener("click", writePassword);
