@@ -14,7 +14,7 @@ function generatePassword() {
   if (input >= 8 && input <= 128) {
     // GOOD CODE GOES HERE
   } else {
-    alert("NOT COOL");
+    alert("TRY AGAIN");
   }
 
   var hasLowercase = window.confirm("Want to use lowercase letters?");
